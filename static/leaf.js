@@ -21,7 +21,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{username}/{id}/tiles/{z}/{x}/{y}?
     accessToken: 'pk.eyJ1Ijoicm9seW1veWEiLCJhIjoiY2tnNWUzbGx2MGV5czJwcXRybGkyMXM4byJ9.9BTe1rH0wWEXdZ8x-rkadQ'
 }).addTo(mymap);
 
-var source = new EventSource('/topic/twitterdata');
+var source = new EventSource('/topic/twitterdata_new');
 
 source.addEventListener('message', function(e){
     obj = JSON.parse(e.data);
